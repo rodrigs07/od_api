@@ -5,6 +5,8 @@ from users import views
 
 router = routers.DefaultRouter()
 router.register(r'membro', views.MembroViewSet)
+router.register(r'pastor', views.PastorViewSet)
+router.register(r'supervisor', views.SupervisorViewSet)
 
 urlpatterns = [
 	url(r'^', include(router.urls)),
