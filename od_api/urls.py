@@ -1,15 +1,7 @@
-from django.conf.urls import include, url
-from django.contrib import admin
-from rest_framework import routers
-from users import views
-
-router = routers.DefaultRouter()
-router.register(r'membro', views.MembroViewSet)
-router.register(r'pastor', views.PastorViewSet)
-router.register(r'supervisor', views.SupervisorViewSet)
-
-urlpatterns = [
-	url(r'^', include(router.urls)),
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
-]
+from django.conf.urls import patterns, include, url
+from userprofile.views import UserViewSet, GroupViewSet
+ 
+urlpatterns = patterns('',
+    url(r'^users/$', UserViewSet.as_view()),
+    url(r'^groups/$', GroupViewSet.as_view()),
+)
