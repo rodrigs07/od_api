@@ -16,4 +16,4 @@ install:
   - pip install django==$DJANGO --quiet
 
 script:
-  - python manage.py syncdb
+  - python manage.py syncdb --noinput
