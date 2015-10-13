@@ -42,11 +42,13 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
         help_text=_('Designates whether this user should be treated as '
                     'active. Unselect this instead of deleting accounts.'))
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
+    phone_number = models.CharField(_('phone number'), blank=True, max_length=20)
+    birth_date = models.DateField(_('birth date'),blank=True)
 
     objects = UserProfileManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['first_name', 'last_name', 'phone_number', 'birth_date']
 
     class Meta:
         verbose_name = _('user')

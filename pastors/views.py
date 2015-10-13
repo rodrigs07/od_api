@@ -1,12 +1,8 @@
-from django.shortcuts import render
-from rest_framework.generics import(
-    ListCreateAPIView
-)
+from rest_framework import viewsets
 from pastors.serializers import PastorSerializers
 from models import *
-# Create your views here.
 
-class PastorViews(ListCreateAPIView):
+class PastorViewSet(viewsets.ModelViewSet):
     queryset = Pastors.objects.all()
     serializer_class = PastorSerializers
 
