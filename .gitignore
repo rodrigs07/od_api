@@ -1,3 +1,6 @@
 db.sqlite3
 users/migrations/**
+pastors/migration/**
+supervisors/migration/**
+.idea/**
 *.pyc

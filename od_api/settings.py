@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'rest_framework',
     'userprofile',
     'pastors',
+    'supervisors',
 )
 
 MIDDLEWARE_CLASSES = (
