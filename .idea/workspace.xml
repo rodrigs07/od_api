@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62a20e49-b604-4da7-a8e5-9207ffb9541f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pastors/models.py" afterPath="$PROJECT_DIR$/pastors/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userprofile/models.py" afterPath="$PROJECT_DIR$/userprofile/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userprofile/serializers.py" afterPath="$PROJECT_DIR$/userprofile/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pastors/tests.py" afterPath="$PROJECT_DIR$/pastors/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userprofile/tests.py" afterPath="$PROJECT_DIR$/userprofile/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/od_api/urls.py" afterPath="$PROJECT_DIR$/od_api/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pastors/views.py" afterPath="$PROJECT_DIR$/pastors/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userprofile/views.py" afterPath="$PROJECT_DIR$/userprofile/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="62a20e49-b604-4da7-a8e5-9207ffb9541f" name="Default" comment="" />
     <ignored path="od_api.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
