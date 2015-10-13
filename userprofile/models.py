@@ -5,8 +5,6 @@ from django.core.signing import Signer
 from django.utils.translation import ugettext_lazy as _
 from django.core.mail import send_mail
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser, PermissionsMixin
-from django.core.validators import RegexValidator
-from django.contrib import admin
 
 class UserProfileManager(BaseUserManager):
 
