@@ -5,6 +5,8 @@ from django.core.signing import Signer
 from django.utils.translation import ugettext_lazy as _
 from django.core.mail import send_mail
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser, PermissionsMixin
+from django.core.validators import RegexValidator
+from django.contrib import admin
 
 class UserProfileManager(BaseUserManager):
 
@@ -42,11 +44,13 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
         help_text=_('Designates whether this user should be treated as '
                     'active. Unselect this instead of deleting accounts.'))
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
+    phone_number = models.CharField(_('phone number'), blank=True, max_length=20)
+    birth_date = models.DateField(_('birth date'),blank=True)
 
     objects = UserProfileManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['first_name', 'last_name', 'phone_number', 'birth_date']
 
     class Meta:
         verbose_name = _('user')
