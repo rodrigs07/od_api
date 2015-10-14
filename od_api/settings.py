@@ -41,6 +41,8 @@ INSTALLED_APPS = (
     'userprofile',
     'pastors',
     'supervisors',
+    'coordinators',
+    'shepherds',
 )
 
 MIDDLEWARE_CLASSES = (
