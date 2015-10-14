@@ -2,5 +2,7 @@ db.sqlite3
 users/migrations/**
 pastors/migration/**
 supervisors/migration/**
+coordinators/migrations/**
+shepherds/migrations/**
 .idea/**
 *.pyc
